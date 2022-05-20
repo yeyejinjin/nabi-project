@@ -1,0 +1,13 @@
+
+body { display: flex; flex-direction: column; min-height: 100vh; color: #fff; }
+
+header {  height: 100vh;   background: url(../src/img/relax_bg5.jpg) no-repeat center center/cover;  }
+.header { position: relative; height: 100%; backdrop-filter: blur(20px);  }
+.text-box { padding: 350px 0;  text-align: center;}
+.text { font-size: 2em; font-family: 'Pretendard Variable'; text-shadow: 1px 1px 1px #b59d8c; }
+
+section { position: absolute; width: 100%; top: 566px; }
+.container {position: relative; /*height: 337px;*/ z-index: 1;  }
+.start-btn {  text-align: center; }
+.start-btn a:hover { background: #8d7b6d; transition: 1s; }
+.start-btn a { display: inline-flex;  padding: 20px 55px; color: #fff; font-size: 1.3em; font-family: 'Pretendard Variable'; background: #b59d8c; /*border: 1px solid #555;*/ border-radius: 50px;}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+
+/* font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Pretendard Variable'; */
+
+* { box-sizing: border-box; margin: 0; padding: 0;  }
+a { text-decoration: none; }
+ul, li { list-style: none; }
+
+.header-text { position: fixed; padding: 50px 120px; top: 0; left: 0; z-index: 1; }
+#logo a { font-size: 2em; font-weight: 600; color: #f8f8f8; }
+
+/* **********header********** */
+.menu-toggle { z-index: 1; position: absolute; padding: 70px; width: 40px; height: 40px; top: 0; right: 0; background: url(../src/img/icon/menu-outline.svg); background-size: 40px; background-repeat: no-repeat; background-position: center; filter: invert(72%) sepia(0%) saturate(7500%) hue-rotate(167deg) brightness(121%) contrast(119%); cursor: pointer; }
+.menu-toggle.active { background: url(../src/img/icon/close-outline.svg); background-size: 40px; background-repeat: no-repeat; background-position: center; filter: invert(17%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(91%); z-index: 2; }
+
+.navigation { display: none; }
+.navigation.active { display: flex; justify-content: center; align-items: center; flex-direction: column; position: fixed; width: 25%; height: 100%; top: 0; right: 0; background: #f8f8f8; z-index: 1; }
+.navigation li { margin: 15px 0; }
+.navigation li a { color: #333; font-size: 1.3em; font-weight: 500;}
+.navigation li a:hover { color: #dacdc4;  transition: 0.5s; }
+
+
+/* **********explanation********** */
+#explanation, #explanation2, #explanation3 { position: absolute; padding: 70px; bottom: 0; color: #f8f8f8; }

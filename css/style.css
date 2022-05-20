@@ -1,0 +1,31 @@
+
+* { font-family: 'Pretendard Variable';}
+
+body { display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh;  background-image: url(../src/img/relax_bg3.jpg);  background-repeat: no-repeat;  }
+/* background: rgba(3, 252, 161, 0.1); */
+.hidden { display: none; }
+
+/* **********form********** */
+.login-form { padding: 30px 45px; backdrop-filter: blur(10px); box-shadow: 2px 7px 15px 5px rgba(0,0,0,0.3); border-radius: 10px; }
+input { border: 0; text-align: center; font-weight: 500; color: rgb(240, 240, 240); font-size: 2em; vertical-align: middle; background: 0;}
+input::placeholder { color: #fff; }
+input:focus { outline: 0;}
+button { padding: 10px 25px; background: 0; font-weight: 500; color: rgb(240, 240, 240); font-size: 1.4em; vertical-align: middle; border: 1px solid #fff; border-radius: 30px; }
+button:hover { background: rgba(255, 255, 255, 0.452); transition: 1s; cursor: pointer; }
+
+#greeting { color: #f0f0f0; font-size: 3em; font-weight: 600; text-decoration: underline; text-underline-position: under; }
+
+#clock { padding: 30px; color: rgb(240, 240, 240); font-size: 3em;}
+
+/* **********todo list********** */
+
+#todo-list .check-box { width: 10px; height: 10px; border: 1px solid rgb(240, 240, 240); border-radius: 5px;}
+#todo-list{ margin: 20px; width: 430px; color: rgb(240, 240, 240); backdrop-filter: blur(10px); border: 1px solid rgba(214, 214, 214, 0.466); border-radius: 10px; box-shadow: 2px 7px 15px 5px rgba(0,0,0,0.3);}
+#todo-list li { position: relative; margin: 25px 20px; }
+#todo-list li button { margin: 0 10px; padding: 10px; font-size: 0.9em; border: none; }
+#todo-list li span { margin: 0 10px; }
+#todo-list li .delete { position: absolute; right: 0;  padding: 0; background: none; }
+.completeToDo { text-decoration: line-through; color: rgb(207, 207, 207); }
+
+/* **********weather********** */
+#weather { position: absolute; top: 70px; font-weight: 500; color: rgb(240, 240, 240); }

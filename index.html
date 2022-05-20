@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>Nabi</title>
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="info.html">소개글</a></li>
+            <li><a href="nabi.html">마음챙김</a></li>
+            <li><a href="nabi2.html">이완명상</a></li>
+        </ul>
+        <div class="header-text">
+            <div id="logo">
+                <a href="index.html">Nabi</a>
+            </div>
+        </div>
+    </header>
+
+    <form class="login-form hidden">
+        <input type="text" placeholder="당신의 이름은 무엇인가요?" maxlength="15" required />
+        <button>입력</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+
+    <div class="clock-box">
+        <h2 id="clock">00:00:00</h2>
+    </div>
+
+    <div class="todo-box hidden">
+        <form id="todo-form">
+            <input type="text" placeholder="오늘 할 일을 등록해 보세요." required />
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="explanation">
+        <span></span>
+    </div>
+
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/menuToggle.js"></script>
+    <script src="js/explanation.js"></script>
+</body>
+</html>
